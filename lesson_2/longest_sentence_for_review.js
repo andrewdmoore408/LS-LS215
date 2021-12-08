@@ -46,9 +46,7 @@ function getSentences(text) {
 
 function longestSentence(text) {
   const sentences = getSentences(text);
-  
   const sentencesWords = sentences.map(sentence => sentence.split(' '));
-  const rejoined = sentencesWords.map(sentence => sentence.join(' '));
   
   sentencesWords.sort((aSentence, bSentence) => bSentence.length - aSentence.length);
   
